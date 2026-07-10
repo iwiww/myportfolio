@@ -1,0 +1,92 @@
+.stage {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background: #0c0d10;
+  padding: 2rem;
+  overflow: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 50% 30%, #1b1c22 0%, #0c0d10 70%);
+  color: #f4f1ea;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero__rays {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 40rem;
+}
+
+.hero__eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b9b09a;
+  margin: 0 0 1.25rem;
+}
+
+.hero__title {
+  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  font-weight: 600;
+  line-height: 1.02;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.hero__sub {
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+  color: #cfc8b8;
+  margin: 1.25rem auto 2.25rem;
+  max-width: 32rem;
+  line-height: 1.5;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: #f4f0e4;
+  color: #14151a;
+}
+
+.btn--ghost {
+  border: 1px solid rgba(244, 241, 234, 0.3);
+  color: #f4f1ea;
+}
+
+.btn--ghost:hover {
+  background: rgba(244, 241, 234, 0.08);
+}
